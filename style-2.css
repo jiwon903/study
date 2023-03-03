@@ -1,0 +1,11 @@
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-size: 12px;
+}
+.mainbox{
+    border: 3px solid rgb(34, 77, 137);
+    width: 610px;
+    text-align: center;
+}
