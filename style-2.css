@@ -8,4 +8,6 @@ footer {
     border: 3px solid rgb(34, 77, 137);
     width: 610px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
