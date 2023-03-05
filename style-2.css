@@ -7,7 +7,9 @@ footer {
 .mainbox{
     border: 3px solid rgb(34, 77, 137);
     width: 610px;
-    text-align: center;
+    text-align: right;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
+    margin: 20px;
 }
