@@ -1,0 +1,44 @@
+body {
+    background-color: rosybrown;
+}
+.post-card{
+    margin: 46px 63px;
+    background-color: #FFFFFF;
+    width: 288px;
+    height: 348px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+img { 
+    width: 288px;
+    height: 196px;
+    object-fit: cover;
+    object-position: center top;
+    vertical-align: top;
+
+}
+.title{
+    margin : 25px 0 0 16px;
+    color: #29363D;
+    font-size: 16px;
+}
+.content{
+    width: 256px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 12px 16px;
+    color: #5A6A72;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
+a{
+    margin: 19px 22px;
+    font-size: 14px;
+    color: #29363D;
+}
