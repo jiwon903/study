@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a태그 예제</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+          }
+          nav{
+            position:fixed;
+            width:100%;
+            background:rgba(255,255,255,0.5)
+          }
+          div{
+            height:600px;
+          
+            font-size:80px;
+            color:#fff;
+            font-wieght:bold;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+          }
+          #one{
+              background:salmon;
+          }
+          #two{
+              background:skyblue;
+          }
+          #three{
+              background:slateblue;
+          }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#one">move #1</a>
+        <a href="#two">move #2</a>
+        <a href="#three">move #3</a>
+    </nav>
+    <div id="one">one</div>
+    <div id="two">two</div>
+    <div id="three">three</div>
+</body>
+</html>
