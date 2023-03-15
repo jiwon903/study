@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두근두근 로그인</title>
+    <style>
+        body {
+            background-color: #fffaf0;
+        }
+        .login {
+            width: 392px;
+            margin: auto;
+        }
+        .login label,
+        .login input,
+        .login button {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #login-button {
+            width: 392px;
+            height: 48px;
+            margin-top: 24px;
+            background: #29363D;
+            font-size: 16px;
+            color: #F4F5F5;
+        }
+        .login input {
+            border-width: 0 0 1px 0;
+            border-color: #677880;
+            height: 48px;
+            margin-bottom: 24px;
+        }
+        .login label {
+            font-size: 14px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-logo"><img src="logo.svg" alt="두근두근 비밀일기 로고"></a>
+        <a href="#" class="btn-join">회원가입</a>
+    </header>
+    <form class="login">
+        <label for="user-email">이메일</label>
+        <input id="user-email" type="email">
+        <label for="user-pw">비밀번호</label>
+        <input id="user-pw" type="text">
+        <button id="login-button" type="submit">로그인</button>
+    </form>
+    
+</body>
+</html>
