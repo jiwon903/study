@@ -1,0 +1,120 @@
+body {
+    background-color: #EAE8FE;
+    margin: 0;
+}
+.title {
+    width: 386px;
+    height: 180px;
+    background-image:url('img/logo.png');
+    background-size: 100% 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 67px;
+}
+.wrap{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.left-side{
+    width: 360px;
+    height: 545px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 31px;
+    height: 280px;
+}
+.second-menu{
+    position: relative;
+}
+.second-menu img:nth-child(1){
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+}
+.menu div{
+    width: 94px;
+    height: 130px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.menu div p{
+    font-size: 9px;
+    font-family: 'Noto Sans KR';
+    color: #333333;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.menu div button{
+    background: #6327FE;
+    border: none;
+    width: 70px;
+    height: 22px;
+    margin-top: 7px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+.menu div:nth-child(1),
+.menu div:nth-child(5){
+    border: 3px solid #6327FE;
+
+}
+.menu img {
+    margin-top: 11px;
+}
+.balance{
+    display: flex;
+}
+.balance div{
+    width: 200px;
+    height: 33px;
+    background: #EAE8FE;
+    margin-top: 20px;
+    margin-left: 27px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+}
+.balance button{
+    width: 94px;
+    height: 33px;
+    font-size: 13px;
+    margin-top: 20px;
+    background: white;
+    margin-left: 12px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    
+}
+.total-money {
+    width: 360px;
+    height: 50px;
+    background: white;
+    margin-bottom: 20px;
+}
+.shopping-list{
+    width: 360px;
+    height: 474px;
+    background: white;
+}
+
+
+
+background: rgb(222,239,222);

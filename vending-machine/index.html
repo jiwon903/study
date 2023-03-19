@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vending machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        .input-money{
+            display: flex;
+        }
+        .input-money input{
+            width: 200px;
+            height: 33px;
+            background: white;
+            margin-top: 11px;
+            margin-left: 27px;
+            border-radius: 5px;
+            text-align: left;
+            line-height: 33px;
+            border: 1px solid #BDBDBD;
+            border-radius: 5px;
+            padding: 0;
+            font-size: 13px;
+            color: #BDBDBD;
+            padding-left: 6px;
+            box-sizing: border-box;
+        }
+        .input-money button{
+            width: 94px;
+            height: 33px;
+            font-size: 13px;
+            margin-top: 11px;
+            background: white;
+            margin-left: 12px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="title"></div>
+    <div class="wrap">
+        <div class="left-side">
+            <div class="menu">
+                <div>
+                    <img alt="콜라" src="img/coke.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+                <div class="second-menu">
+                    <img alt="soldout" src="img/soldout.png" width="94px" height="130px">
+                    <img alt="콜라2" src="img/coke2.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+                <div>
+                    <img alt="콜라3" src="img/coke3.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+                <div>
+                    <img alt="콜라4" src="img/coke4.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+                <div>
+                    <img alt="콜라5" src="img/coke5.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+                <div>
+                    <img alt="콜라6" src="img/coke6.png" width="36px" height="65px">
+                    <p>Origianl_Cola</p>
+                    <button type="button">1000원</button>
+                </div>
+            </div>
+            <div class="balance">
+                <div>잔액 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,000 원</div>
+                <button>거스름돈 반환</button>
+            </div>
+            <div class="input-money">
+                <input type="text" value="입금액 입력">
+                <button>입금</button>
+            </div>
+            
+        </div>
+        <div class="right-side">
+            <div class="total-money">total-money</div>
+            <div class="shopping-list">쇼핑리스트</div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
+
