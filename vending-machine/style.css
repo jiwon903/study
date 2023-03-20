@@ -7,7 +7,6 @@ body {
     height: 180px;
     background-image:url('img/logo.png');
     background-size: 100% 100%;
-    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 67px;
@@ -32,6 +31,7 @@ body {
     justify-content: center;
     margin-top: 31px;
     height: 280px;
+    align-items: center;
 }
 .second-menu{
     position: relative;
@@ -61,9 +61,14 @@ body {
     border: none;
     width: 70px;
     height: 22px;
+    line-height: 22px;
+    padding-top: 0;
     margin-top: 7px;
+    margin-bottom: 9px;
     border-radius: 50px;
+    font-weight: 500;
     font-size: 12px;
+    color: white;
 }
 .menu div:nth-child(1),
 .menu div:nth-child(5){
@@ -85,11 +90,13 @@ body {
     border-radius: 5px;
     text-align: center;
     line-height: 33px;
+    font-weight: 500;
     font-size: 14px;
 }
 .balance button{
     width: 94px;
     height: 33px;
+    font-weight: 500;
     font-size: 13px;
     margin-top: 20px;
     background: white;
@@ -114,10 +121,30 @@ body {
     height: 32px;
     background: #EAE8FE;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     line-height: 32px;
+    font-weight: 500;
     margin: auto;
     margin-top: 9px;
+}
+.total-money-left{
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 47px;
+    height: 20px;
+}
+.total-money-right{
+    float: right;
+    font-weight: 700;
+    font-size: 14px;
+    width: 87px;
+    height: 20px;
+    line-height: top;
+    text-align: right;
+    margin-right: 10px;
 }
 .shopping-list-wrap{
     width: 360px;
@@ -128,7 +155,9 @@ body {
 .shopping-list{
     width: 306px;
     height: 364px;
-    background: #EAE8FE;;
+    background: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
     margin-left: 27px;
     padding-top: 12px;
     overflow-y: scroll; 
@@ -146,10 +175,17 @@ body {
 }
 .shopping-list-wrap p:first-child{
     margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 25px;
 }
 .shopping-list-wrap p:last-child{
     text-align: right;
+    line-height: bottom;
+    font-weight: 500;
+    font-size: 12px;
     margin-right: 27px;
+    margin-top: 11px;
 }
 .shopping-list ul{
     margin-top: 0px;
@@ -194,6 +230,117 @@ body {
     margin-right: 8px;
     line-height: 30px;
 }
+.input-money{
+    display: flex;
+}
+.input-money input{
+    width: 200px;
+    height: 33px;
+    background: white;
+    margin-top: 11px;
+    margin-left: 27px;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 33px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 13px;
+    color: #BDBDBD;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+.input-money button{
+    width: 94px;
+    height: 33px;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 11px;
+    background: white;
+    margin-left: 12px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.cart-wrap{
+    display: flex;
+}
+.cart{
+    width: 200px;
+    height: 106px;
+    background: #EAE8FE;
+    margin-top: 11px;
+    margin-left: 27px;
+    margin-bottom: 28px;
+    padding-top: 12px;
+    overflow-y: scroll; 
+    padding-top: 0;   
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+.cart::-webkit-scrollbar{
+    width: 12px;
+}
+.cart::-webkit-scrollbar-thumb{
+    
+    background-clip: padding-box;
+    background: white;
+    border-radius: 10px;
+    border: 4px solid #EAE8FE;;
+}
+.cart ul{
+    margin-top: 0px;
+    margin-left: 12px;
+    padding: 0;
+}
 
-
-background: rgb(222,239,222);
+.cart li{
+    width: 170px;
+    height: 46px;
+    background: white;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+.cart ul li:first-child{
+    margin-top: 12px;
+}
+.cart li img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.cart li p{
+    margin-top: 18px;
+    margin-left: 10px;
+    height: 10px;
+    float: left;
+    font-weight: 500;
+    font-size: 9px;
+}
+.cart ul li div{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    float:right;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+    line-height: 30px;
+}
+.cart-wrap button{
+    width: 94px;
+    height: 106px;
+    background: #6327FE;
+    margin-top: 12px;
+    margin-left: 12px;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
