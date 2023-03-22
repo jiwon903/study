@@ -1,0 +1,46 @@
+.login-page-wrap{
+    width: 520px;
+    height: 736px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue ;
+}
+header{
+    text-align: center;
+    border-bottom: 1px solid #C4C4C4;
+}
+header h1{
+    display: inline-block;
+    width: 144px;
+    height: 20px;
+    font-size: 16px;
+
+}
+header button{
+    display: inline-block;
+    background-color: white;
+    border: none;
+}
+#user-id,#user-pw{
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 472px;
+    height: 50px;
+}
+#user-id{
+    border: 2px solid red;
+}
+.main-login p{
+    font-size: 14px;
+    color: #F4492E;
+}
+.main-login label{
+    margin-top: 20px;
+    margin-right: 351px;
+}
+#login-submit-button{
+    margin-top: 21px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 472px;
+}
