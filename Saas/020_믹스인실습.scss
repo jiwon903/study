@@ -1,0 +1,26 @@
+@mixin outline($display,$justi,$align){
+    display: $display;
+    justify-content: $justi;
+    align-items: $align;
+}
+@mixin pre-item($width,$height,$radi){
+    width: $width;
+    height: $height;
+    border-radius: $radi;
+}
+
+.card {
+    @include outline(flex,center,center);
+}
+
+.card-item {
+    @include pre-item(100px,100px ,10%);
+}
+
+.product {
+    @include outline(flex,right,right);
+}
+
+.product-item {
+    @include pre-item(200px,200px ,20%);
+}

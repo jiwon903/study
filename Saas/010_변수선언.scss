@@ -1,0 +1,13 @@
+.one{
+    $value: red;
+    color: $value;
+    .three{
+        background-color: $value;
+    }
+
+}
+
+// 아래 부분을 주석 처리해 주면 제대로 컴파일 가능. 그 이전에는 아래 부분 때문에 컴파일 안됨. css와의 차이점. 오류를 뿜어주는 이점 ? 이라고도 볼 수 있음.
+// .two{
+//     color: $value;
+// }

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 두 줄 주석입니다. 이렇게 두줄 주석만 남음 */
+.one {
+  color: blue;
+}
+.one .two {
+  color: green;
+}
+.one .two .three {
+  color: yellow;
+}
+
+/* 네이스팅 예시. 이런식으로 안으로 들여쓰면서 해준다. ul 밑에 li 이런식으로 */
+ul li {
+  color: red;
+  font-size: 10px;
+}/*# sourceMappingURL=002_주석과네이스팅.css.map */

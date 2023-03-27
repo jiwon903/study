@@ -1,0 +1,13 @@
+// 지역변수를 전역변수로 설정 가능한 방법.
+.one {
+    // 지역변수 글로벌 권장하지 않음.
+    $value: red !global;
+    color: $value; 
+
+    .three {
+        background-color: $value;
+    }
+}
+.two{
+    color: $value;
+}
