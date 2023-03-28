@@ -1,0 +1,8 @@
+article{
+    /* flex-direction 속성으로 옆으로 붙은 두 아이템을 세로로정렬되게 변경해줌 */
+    display: flex;
+    flex-direction: column;
+}
+/* .question{
+    display: none;
+} */
