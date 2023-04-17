@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>변수</title>
 </head>
 <body>
     <script>
-        console.group('위니브');
-        console.group('경영지원');
-        console.log('대표/이호준');
-        console.group('비서팀');
-        console.log('비서팀장/자비스');
-        console.groupEnd();
-        console.log('COO/OOO');
-        console.log('CDO/OOO');
-        console.groupEnd();
-        console.group('개발');
-        console.log('개발리드/이OO');
-        console.log('FE/OOO');
-        console.log('FE/OOO');
-        console.log('BE/OOO');
-        console.log('BE/OOO');
-        console.log('Infra/OOO');
-        console.groupEnd();
-        console.group('디자인');
-        console.log('DE/OOO');
-        console.log('DE/OOO');
-        console.groupEnd();
-        console.groupEnd();
+        // 원시타입 string, number, bigint, boolean, undefined, symbol, null
+        let str1 = 'hello';
+        let str2 = str1;
+        console.log(str2); // 'hello'
 
-        console.group('짭니브');
-        console.group('짭영지원');
-        console.log('대표/짭호준');
-        console.groupEnd();
-        console.group('짭서팀');
-        console.log('비서팀장/잡비스');
-        console.groupEnd();
-        console.log('cdcdc');
-        console.log('cddddddddddd');
+        str1 = 'world';
+        console.log(str2); // str2에 할당된 값은 여전히 'hello' 입니다.
 
+        // string
+        console.log(typeof 'hello')
+        console.log(typeof "hello")
+        // 이스케이프 문자
+        // \'	작은따옴표
+        // \"	큰따옴표
+        // \t	가로 탭
+        // \n	줄 바꿈
+        console.log(typeof 'i\'m so happy')
+        console.log('h\ne\nl\nl\no')
+    
     </script>
 </body>
 </html>
