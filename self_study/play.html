@@ -8,24 +8,39 @@
 </head>
 <body>
     <script>
-        // 원시타입 string, number, bigint, boolean, undefined, symbol, null
-        let str1 = 'hello';
-        let str2 = str1;
-        console.log(str2); // 'hello'
+       
+        // bigint(2^53 - 1보다 큰 정수)
+        console.log(90071992547409960n + 90071992547409960n)
+        console.log(90071992547409960 + 90071992547409960)
+        console.log(typeof 90071992547409960n)
 
-        str1 = 'world';
-        console.log(str2); // str2에 할당된 값은 여전히 'hello' 입니다.
+        // symbol
+        console.log(typeof Symbol())
 
-        // string
-        console.log(typeof 'hello')
-        console.log(typeof "hello")
-        // 이스케이프 문자
-        // \'	작은따옴표
-        // \"	큰따옴표
-        // \t	가로 탭
-        // \n	줄 바꿈
-        console.log(typeof 'i\'m so happy')
-        console.log('h\ne\nl\nl\no')
+        /////////////////////////
+        // function
+        console.log(typeof function(){}) 
+
+        // object
+        console.log(typeof [10, 20, 30]) // 배열
+        console.log(typeof {a: 10, b: 20}) // object
+        console.log(typeof /정규표현식/gi)
+
+
+        // 형변환(다른 type -> string)
+        let hojun = 10;
+        console.log(hojun.toString()) // 권합니다.
+        // 10.toString() 10.까지를 소숫점으로 봅니다.
+        console.log('' + 10)
+        console.log(String(10))
+
+        // 형변환(다른 type -> boolean)
+        let hojun2 = 10;
+        console.log(Boolean(-1))
+        console.log(Boolean(0))
+        console.log(Boolean(1000))
+        console.log(!!1000)
+        console.log(!!hojun2)
     
     </script>
 </body>
