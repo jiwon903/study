@@ -38,6 +38,14 @@
 
         let md2 = '# hello world'
         md = md2.replace('# ', '<h1>') + '</h1>'
+
+
+        let txt2 = 'paullab CEO leehojun CEO'
+        console.log(txt2.replace('CEO', 'COO'))
+        console.log(txt2.replace(/CEO/g, 'COO'))
+        // 구 브라우저 지원이 안될 가능성이 큼, 회사가서 확인하세요.
+        // 21년도에 추가되었습니다.
+        console.log(txt2.replaceAll('CEO', 'COO'))
     </script>
 </body>
 </html>
