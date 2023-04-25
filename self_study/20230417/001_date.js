@@ -55,13 +55,12 @@ today = new Date() // today의 지정 로캘은 KST(Korea Standard Time)다.
 // locale 을 활용하면 언어권에 맞게 입력과 출력을 수정하지 않고도 사용하는 언어권에 맞는 날짜를 처리할 수 있습니다.
 //UTC와 현재 로케일(호스트 시스템, today의 지정 로캘 KST(Korea Standard Time))의 차이는 -9시간이다.
 today.getTimezoneOffset() / 60 // getTimezoneOffset() : UTC와 지정 로케일 시간과의 차이를 분단위로 반환해준다. '/60'을 해주는 이유는 이처럼 분단위를 시간단위로 반환해 주기 위해서이다.
-console.log(today.getTimezoneOffset()/60);
+console.log(today.getTimezoneOffset()/60); // -9시간이 출력된다.
 
 today.toString();     // -> Fri Jul 24 2020 12:30:00 GMT+0900 (대한민국 표준시)
 today.toTimeString(); // -> 12:30:00 GMT+0900 (대한민국 표준시)
 
 today = new Date('2023/1/20/10:00:00')
-today.toString();
 
 // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
 // 국제표준시 기준 형식으로 표현
@@ -88,7 +87,6 @@ const dayNames = [
 ];
 // getDay 메서드는 해당 요일(0 ~ 6)을 나타내는 정수를 반환한다.
 const day = dayNames[today.getDay()];
-
 const year = today.getFullYear();
 const month = today.getMonth() + 1;
 const date = today.getDate();
