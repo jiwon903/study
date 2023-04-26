@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Notepad</title>
+  <style>
+    button {
+        margin-top: 5px;
+        display: block;
+        width: 425px;
+        height: 30px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #saved-notes {
+        width: 425px;
+        height: 300px;
+    }
+    p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <h1>📝 나만의 메모장</h1>
+        <textarea id="notes" rows="10" cols="50" wrap="hard"></textarea>
+        <button id="save-button">Save</button>
+        <button id="clean-all-button">Clean All</button>
+        <div id="saved-notes"></div>
+        <script src="notepad.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notepad</title>
+    <style>
+        body {
+            background-color: rgb(244, 233, 201);
+        }
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+        li {
+            border: 1px rgb(85, 84, 84) solid;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 30px;
+            padding-top: 20px;
+            padding: 5px;
+            
+        }
+        li button {
+            margin-top: 20px;
+            margin-bottom: 0;
+            border: none;
+        }
+        button {
+            display: block;
+            width: 306px;
+            height: 30px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        textarea {
+            width: 306px;
+            height: 306px;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>📝 나만의 메모장</h1>
+        <textarea id="note" placeholder="내용을 입력해주세요"></textarea>
+        <br>
+        <button onclick="saveNote()">저장</button>
+        <button onclick="clearNotes()">모두 비우기</button>
+        <ul id="noteList"></ul>
+    </main>
+    
+    <script src="gptscript.js"></script>
+  </body>
+</html>

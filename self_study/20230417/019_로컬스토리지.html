@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> 📝 나만의 메모장 스토리지</title>
         <style>
             main {
                 display: flex;
@@ -35,10 +36,12 @@
     </head>
     <body>
         <main>
+            <h1>📝 나만의 메모장</h1>
             <section>
                 <input type="text" name="" id="title" />
                 <textarea name="" id="content" cols="30" rows="10"></textarea>
-                <button onclick="saveNote()">메모</button>
+                <button onclick="saveNote()">저장하기</button>
+                <button onclick="clearAll()">모두삭제</button>
             </section>
             <section id="display"></section>
         </main>
@@ -61,11 +64,6 @@
                 const display = document.getElementById("display");
                 display.innerHTML = "";
 
-                // // 최신 게시물이 위로 올라오도록
-                // for (let i = allMemo.length; i > 0 ; i--) {
-                //     // 아래와 유사 코드
-                // }
-
                 for (const item of allMemo) {
                     const saveTitle = document.createElement("h2");
                     const saveContent = document.createElement("p");
@@ -87,8 +85,6 @@
             }
 
             function remove() {
-                // console.log(event.srcElement.id);
-                // console.log(allMemo);
                 const idx = allMemo.find(
                     (item) => item.len == event.srcElement.id
                 );
@@ -98,6 +94,12 @@
                         1
                     );
                 }
+                localStorage.setItem("allMemo", JSON.stringify(allMemo));
+                render();
+            }
+            function clearAll() {
+                allMemo = [];
+                console.log(allMemo);
                 localStorage.setItem("allMemo", JSON.stringify(allMemo));
                 render();
             }
