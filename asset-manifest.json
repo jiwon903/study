@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jiwon903/reactPubi/static/css/main.073c9b0a.css",
+    "main.js": "/jiwon903/reactPubi/static/js/main.d0d1f850.js",
+    "static/js/787.28cb0dcd.chunk.js": "/jiwon903/reactPubi/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/jiwon903/reactPubi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/jiwon903/reactPubi/index.html",
+    "main.073c9b0a.css.map": "/jiwon903/reactPubi/static/css/main.073c9b0a.css.map",
+    "main.d0d1f850.js.map": "/jiwon903/reactPubi/static/js/main.d0d1f850.js.map",
+    "787.28cb0dcd.chunk.js.map": "/jiwon903/reactPubi/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d0d1f850.js"
+  ]
+}
