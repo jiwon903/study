@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+	<label for="hours">Hours:</label>
+	<input type="number" id="hours" min="0" max="24" value="0"><br><br>
+	<label for="minutes">Minutes:</label>
+	<input type="number" id="minutes" min="0" max="59" value="0"><br><br>
+	<label for="seconds">Seconds:</label>
+	<input type="number" id="seconds" min="0" max="59" value="0"><br><br>
+	<button onclick="startTimer()">Start</button>
+	<button onclick="resetTimer()">Reset</button>
+	<p id="timer"></p>
+
+	<script>
+		let hoursInput = document.getElementById("hours");
+		let minutesInput = document.getElementById("minutes");
+		let secondsInput = document.getElementById("seconds");
+		let timerOutput = document.getElementById("timer");
+		let countdown;
+
+		function startTimer() {
+			let hours = parseInt(hoursInput.value);
+			let minutes = parseInt(minutesInput.value);
+			let seconds = parseInt(secondsInput.value);
+
+			let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+			if (isNaN(totalSeconds)) {
+				alert("Please enter a valid time.");
+				return;
+			}
+
+			countdown = setInterval(function() {
+				if (totalSeconds <= 0) {
+					clearInterval(countdown);
+					timerOutput.innerHTML = "Time's up!";
+					return;
+				}
+
+				let remainingHours = Math.floor(totalSeconds / 3600);
+				let remainingMinutes = Math.floor((totalSeconds % 3600) / 60);
+				let remainingSeconds = totalSeconds % 60;
+
+				timerOutput.innerHTML = `${remainingHours.toString().padStart(2, '0')}:${remainingMinutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+				totalSeconds--;
+			}, 1000);
+		}
+
+		function resetTimer() {
+			clearInterval(countdown);
+			hoursInput.value = "0";
+			minutesInput.value = "0";
+			secondsInput.value = "0";
+			timerOutput.innerHTML = "00:00:00";
+		}
+	</script>
+</body>
+</html>
