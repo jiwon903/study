@@ -1,5 +1,9 @@
-// 모음 제거
-Array.from('hello world').filter(v => !["a", "e", "i", "o", "u"].includes(v))
+// reduce
+const arr1 = [1, 2, 3, 4, 5]
+arr1.reduce((a, c) => a + c, 0)
 
-let answer = Array.from('hello mark').filter((el) => !['a','e','i','o','u',' '].includes(el))
-console.log(answer);
+const arr1 = []
+arr1.reduce((a, c) => a + c)
+
+const arr1 = [1]
+arr1.reduce((a, c) => a + c)
