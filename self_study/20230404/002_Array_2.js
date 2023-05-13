@@ -1,12 +1,9 @@
-// reduce 함수를 알아보자 ! 
-const arr1 = [1, 2, 3, 4, 5]
-arr1.reduce((a, c) => a + c, 0)
+// join
+const arr1 = ['hello', 'world', 'hojun']
+console.log(arr1.join('!'))
 
-const arr1 = []
-arr1.reduce((a, c) => a + c)
+const arr2 = ['010', '5044', '2903']
+console.log(arr2.join('-'))
 
-const arr1 = [1]
-arr1.reduce((a, c) => a + c)
-
-const arr1 = [1]
-arr1.reduce((a, c) => a + c)
+const arr3 = [010, 5044, 2903]
+arr3.join('-') // 이렇게 하시면 안됩니다.
