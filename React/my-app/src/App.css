@@ -23,7 +23,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.list-area{
+  padding:0;
+  list-style: none;
+}
+.list-area-item {
+  border : 1px solid black;
+}
+.list-area-item.active {
+  background-color: rosybrown;
+  color: aliceblue;
+}
+.list-area-item+.list-area-item {
+  border-top: none;
+}
 .newClass{
   width: 100%;
   height: 20px;
